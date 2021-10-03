@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <batch_size>1000</batch_size>
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function loadData(import_set_table) {
+
+    //Call GetFilteredTicketIDs
+    var GetFilteredTicketIDs_URL = 'https://apporchard.epic.com/interconnect-aocurprd-username/api/epic/2018/ContentManagement/Ticket/GetFilteredTicketIDs/GetFilteredTicketIDs';
+    var body = "{'Filter':{'Option':'ANY','INIs':[],'Statuses':[],'Priorities':[],'AffectedTeams':[],'ResponsibleTeams':[],'Reasons':[],'Owners':[],'Stakeholders':[]},'UserID':{'ID':'1','Type':'EXTERNAL'},'TicketIDs':[]}";
+
+    var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint(GetFilteredTicketIDs_URL);
+    request.setHttpMethod('Post');
+
+    request.setRequestHeader("Authorization", "Basic ZW1wJERDUlM6aDdBTnZIUTZrZ0pBU1p5");
+    request.setRequestHeader("Epic-Client-ID", "ad1f37f9-f1e0-4343-9d1e-b798775a70e7");
+    request.setRequestHeader("Accept", "application/json");
+    request.setRequestHeader("Content-Type", "application/json");
+
+    request.setRequestBody(body);
+
+    //request.setMIDServer('MID0001');
+    //request.setHttpTimeout(6000);
+
+
+    var response = request.execute();
+    //gs.info(response.getBody());
+    //gs.info(response.getStatusCode());
+
+    //Find ticket parameters
+    var GetFilteredTicketIDs = JSON.parse(response.getBody());
+    //gs.info(GetFilteredTicketIDs);
+    //gs.info('AAAAAAAAA ' + GetFilteredTicketIDs.TicketIDs[0].ID);
+
+    //Call GetTicketInfo
+	var GetFilteredTicketIDs_URL = 'https://apporchard.epic.com/interconnect-aocurprd-username/api/epic/2018/ContentManagement/Ticket/GetTicketInfo/GetTicketInfo';
+	var body = "{'ReturnRecordNames':'TRUE','TicketIDs':[{'ID':'T150-213','Type':'Name'}],'UserID':{'ID':'1','Type':'EXTERNAL'}}";
+	
+	var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint(GetFilteredTicketIDs_URL);
+    request.setHttpMethod('Post');
+	
+	request.setRequestHeader("Authorization", "Basic ZW1wJERDUlM6aDdBTnZIUTZrZ0pBU1p5");
+    request.setRequestHeader("Epic-Client-ID", "ad1f37f9-f1e0-4343-9d1e-b798775a70e7");
+    request.setRequestHeader("Accept", "application/json");
+    request.setRequestHeader("Content-Type", "application/json");
+    request.setRequestBody(body);
+	var response = request.execute();
+    gs.info(response.getBody());
+	
+	//Simulerer REST response----------------------------
+	var GetTicketInfo = JSON.parse(response.getBody());
+        var map = {
+            'Request Action': 'OPRET_CM_Ticket_v001',
+            //u_ticket_id: GetTicketInfo.TicketInfoArray[0].Info.Definition.ID.ID,
+            //u_ticket_type: GetTicketInfo.TicketInfoArray[0].Info.Definition.ID.Type,
+			'Request Payload': response.getBody().toString()
+        };
+        import_set_table.insert(map);
+
+
+
+    //Simulerer REST response----------------------------
+    //     var jsonTicketIDs = JSON.parse('{"Errors": [],"TicketIDs": [{"ID": "T150-220","Type": "Name"},{"ID": "T150-213","Type": "Name"}]}');
+
+    //     var i;
+    //     var iLength = jsonTicketIDs.TicketIDs.length;
+    //     for (i = 0; i < iLength; i++) {
+    //         //gs.info(jsonTicketIDs.TicketIDs[i].ID + ' ' + jsonTicketIDs.TicketIDs[i].Type);
+    //         break;
+    //     }
+    //     var jsonTicket = JSON.parse('{"Errors":[],"TicketInfoArray":[{"Info":{"Definition":{"Title":"","Status":"Draft","Priority":"","Reason":"","ChangeComments":"","DueDate":"","DueTime":"","ReadyForProduction":"No","ID":{"ID":"T150-500","Type":"Name"}},"Users":{"ResponsibleTeam":"","AffectedTeams":[],"Owner":{"ID":"EPIC SANDBOX, USER","Type":"Name"},"Stakeholders":[]},"ExternalReference":{"ExternalReferenceNumber":"","Documentation":[{"Type":"Non-Production Client ID","Reference":"test"},{"Type":"Non-Production Client ID","Reference":"test2"},{"Type":"Non-Production Client ID","Reference":"test3"}]}},"ID":{"ID":"T150-212","Type":"Name"}}]}');
+
+    //Simulerer REST response----------------------------
+    //     var map = {
+    //         u_function: 'CM_Ticket',
+    //         u_ticket_id: jsonTicket.TicketInfoArray[0].Info.Definition.ID.ID,
+    //         u_ticket_type: jsonTicket.TicketInfoArray[0].Info.Definition.ID.Type
+    //     };
+    //     import_set_table.insert(map);
+
+})(import_set_table);]]></data_loader>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>EPIC REST OPRET_CM_Tickets_v002</import_set_table_label>
+        <import_set_table_name>x_70433_epic_test_epic_rest_opret_cm_tickets_v002</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time/>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>EPIC REST OPRET_CM_Tickets_v002</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-03 12:04:49</sys_created_on>
+        <sys_id>2bca83501b0f3010708a6288b04bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EPIC REST OPRET_CM_Tickets_v002</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_update_name>sys_data_source_2bca83501b0f3010708a6288b04bcbd6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-03 12:04:49</sys_updated_on>
+        <table_name/>
+        <type>CUSTOM</type>
+        <use_batch_import>false</use_batch_import>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

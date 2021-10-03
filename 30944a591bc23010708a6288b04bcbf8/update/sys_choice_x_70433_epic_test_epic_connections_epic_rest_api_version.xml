@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="epic_rest_api_version" table="x_70433_epic_test_epic_connections" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>epic_rest_api_version</element>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:32:19</sys_created_on>
+            <sys_id>e1e7e2941b8b3010708a6288b04bcbe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>epic_rest_api_version</sys_name>
+            <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+            <sys_update_name>sys_choice_x_70433_epic_test_epic_connections_epic_rest_api_version</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:32:19</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_rest_api_version</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2019</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:32:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a9e7e2941b8b3010708a6288b04bcbe0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:33:18</sys_updated_on>
+            <value>2019</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_rest_api_version</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2020</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:33:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd2826941b8b3010708a6288b04bcb44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:33:33</sys_updated_on>
+            <value>2020</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

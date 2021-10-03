@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-26 20:19:29</sys_created_on>
+        <sys_id>99e8fcde1b7af010708a6288b04bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_70433_epic_test_epic_to_sn_outbound.x_70433_epic_test.epic_to_sn_outbound_user</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_security_acl display_value="x_70433_epic_test_epic_to_sn_outbound">95e8fcde1b7af010708a6288b04bcb8d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_99e8fcde1b7af010708a6288b04bcb90</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-26 20:19:29</sys_updated_on>
+        <sys_user_role display_value="x_70433_epic_test.epic_to_sn_outbound_user" name="x_70433_epic_test.epic_to_sn_outbound_user">11e8bcde1b7af010708a6288b04bcbcb</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

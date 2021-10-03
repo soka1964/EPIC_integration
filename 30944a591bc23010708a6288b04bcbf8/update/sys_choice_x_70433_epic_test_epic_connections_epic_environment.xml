@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="epic_environment" table="x_70433_epic_test_epic_connections" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>epic_environment</element>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:38:54</sys_created_on>
+            <sys_id>4669ee941b8b3010708a6288b04bcb14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>epic_environment</sys_name>
+            <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+            <sys_update_name>sys_choice_x_70433_epic_test_epic_connections_epic_environment</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:38:54</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>POC</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:38:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca59e6d41b8b3010708a6288b04bcb62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:38:54</sys_updated_on>
+            <value>poc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PRE</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49996e941b8b3010708a6288b04bcbf4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:39:39</sys_updated_on>
+            <value>pre</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PROD</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:39:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4a92ad41b8b3010708a6288b04bcb62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:39:55</sys_updated_on>
+            <value>prod</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TST</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:39:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce79a2941b8b3010708a6288b04bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:39:11</sys_updated_on>
+            <value>tst</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>epic_environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TSTX</label>
+            <language>en</language>
+            <name>x_70433_epic_test_epic_connections</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-10-03 09:39:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a8926941b8b3010708a6288b04bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-10-03 09:39:27</sys_updated_on>
+            <value>tstx</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
