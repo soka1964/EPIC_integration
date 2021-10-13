@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_70433_epic_test.OAuthDevOpsGitHubHandlerEPIC</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>OAuthDevOpsGitHubHandlerEPIC</name>
+        <script><![CDATA[// var OAuthDevOpsGitHubHandlerEPIC = Class.create();
+// OAuthDevOpsGitHubHandlerEPIC.prototype = {
+//     initialize: function() {
+//     },
+
+//     type: 'OAuthDevOpsGitHubHandlerEPIC'
+// };
+
+var OAuthDevOpsGitHubHandlerEPIC = Class.create();
+OAuthDevOpsGitHubHandlerEPIC.prototype = {
+    initialize: function() {
+    },
+	
+	// Override postprocessAccessToken method. GitHub returns a urlencoded
+	// body, so we need to break this apart and extract the values. 
+	postprocessAccessToken: function(accessTokenResponse) {
+		var contentType = accessTokenResponse.getContentType();
+		var contentBody = accessTokenResponse.getBody(); 
+		var paramMap = accessTokenResponse.getparameters();
+		var params = contentBody.split('&'); 
+		var parts; 
+		
+		params.forEach(function(param) {
+			parts = param.split('=');
+			paramMap.put(parts[0], parts[1]);
+		});
+		
+		// GitHub tokens do not expire, hardcode expiration to something far away
+		paramMap.put('expires_in', '365246060'); 
+	},
+
+    type: 'OAuthDevOpsGitHubHandlerEPIC'
+};
+
+
+// var OAuthGitHubHandler = Class.create();
+// OAuthGitHubHandler.prototype = Object.extendsObject(OAuthUtil,  {
+// 	// Override postprocessAccessToken method. GitHub returns a urlencoded
+// 	// body, so we need to break this apart and extract the values. 
+// 	postprocessAccessToken: function(accessTokenResponse) {
+// 		var contentType = accessTokenResponse.getContentType();
+// 		var contentBody = accessTokenResponse.getBody(); 
+// 		var paramMap = accessTokenResponse.getparameters();
+// 		var params = contentBody.split('&'); 
+// 		var parts; 
+		
+// 		params.forEach(function(param) {
+// 			parts = param.split('=');
+// 			paramMap.put(parts[0], parts[1]);
+// 		});
+		
+// 		// GitHub tokens do not expire, hardcode expiration to something far away
+// 		paramMap.put('expires_in', '365246060'); 
+// 	},
+	
+// 	type: 'OAuthGitHubHandler'
+// });]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-04 14:30:20</sys_created_on>
+        <sys_id>cc9578381b4f7010708a6288b04bcb3c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OAuthDevOpsGitHubHandlerEPIC</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_update_name>sys_script_include_cc9578381b4f7010708a6288b04bcb3c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-04 14:53:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

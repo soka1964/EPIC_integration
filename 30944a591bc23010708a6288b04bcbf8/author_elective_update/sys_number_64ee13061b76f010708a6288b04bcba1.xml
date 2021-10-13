@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_70433_epic_test_epic_inbound">x_70433_epic_test_epic_inbound</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1</number>
+        <prefix>EPICInbound</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-26 13:46:14</sys_created_on>
+        <sys_id>64ee13061b76f010708a6288b04bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EPICInbound</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_update_name>sys_number_64ee13061b76f010708a6288b04bcba1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-26 13:46:14</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</application>
+        <file_path/>
+        <instance_id>bb35a8bb1b4b60587d9d2f8dee4bcb4a</instance_id>
+        <instance_name>dev109072</instance_name>
+        <name>sys_number_64ee13061b76f010708a6288b04bcba1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_70433_epic_test_epic_inbound">x_70433_epic_test_epic_inbound</category><maximum_digits>7</maximum_digits><number>1</number><prefix>EPICInbound</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-09-26 13:46:14</sys_created_on><sys_id>64ee13061b76f010708a6288b04bcba1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>EPICInbound</sys_name><sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package><sys_policy/><sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope><sys_update_name>sys_number_64ee13061b76f010708a6288b04bcba1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-09-26 13:46:14</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-395094001</payload_hash>
+        <record_name>EPICInbound</record_name>
+        <reverted_from/>
+        <source>6c8ab1711bf2b010708a6288b04bcbe5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-26 13:46:14</sys_created_on>
+        <sys_id>f8ee5b061b76f010708a6288b04bcb6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c225b32b70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-26 13:46:14</sys_updated_on>
+        <type>Number</type>
+        <update_guid>f0ee5b066c76f01065a7884ecc08c26e</update_guid>
+        <update_guid_history>f0ee5b066c76f01065a7884ecc08c26e:-395094001</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-26 13:49:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>85c86aaa21aa42a6aea72d5829e90664</sys_id>
+        <sys_metadata>64ee13061b76f010708a6288b04bcba1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EPICInbound</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_parent display_value="">683e9fc21b76f010708a6288b04bcbea</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_scope_delete display_value="">896c2ccd4dcb48f69d03438538114b39</sys_scope_delete>
+        <sys_update_name>sys_number_64ee13061b76f010708a6288b04bcba1</sys_update_name>
+        <sys_update_version display_value="sys_number_64ee13061b76f010708a6288b04bcba1">f8ee5b061b76f010708a6288b04bcb6e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-26 13:49:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

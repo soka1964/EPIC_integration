@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_70433_epic_test.OAuthDevOpsGitHubHandler</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>OAuthDevOpsGitHubHandler</name>
+        <script><![CDATA[// var OAuthDevOpsGitHubHandler = Class.create();
+// OAuthDevOpsGitHubHandler.prototype = {
+//     initialize: function() {
+//     },
+
+//     type: 'OAuthDevOpsGitHubHandler'
+// };
+
+var OAuthGitHubHandler = Class.create();
+OAuthGitHubHandler.prototype = Object.extendsObject(OAuthUtil,  {
+	// Override postprocessAccessToken method. GitHub returns a urlencoded
+	// body, so we need to break this apart and extract the values. 
+	postprocessAccessToken: function(accessTokenResponse) {
+		var contentType = accessTokenResponse.getContentType();
+		var contentBody = accessTokenResponse.getBody(); 
+		var paramMap = accessTokenResponse.getparameters();
+		var params = contentBody.split('&'); 
+		var parts; 
+		
+		params.forEach(function(param) {
+			parts = param.split('=');
+			paramMap.put(parts[0], parts[1]);
+		});
+		
+		// GitHub tokens do not expire, hardcode expiration to something far away
+		paramMap.put('expires_in', '365246060'); 
+	},
+	
+	type: 'OAuthGitHubHandler'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-03 21:09:25</sys_created_on>
+        <sys_id>0327cdec1b437010708a6288b04bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OAuthDevOpsGitHubHandler</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_update_name>sys_script_include_0327cdec1b437010708a6288b04bcbdb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-03 21:09:25</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</application>
+        <file_path/>
+        <instance_id>bb35a8bb1b4b60587d9d2f8dee4bcb4a</instance_id>
+        <instance_name>dev109072</instance_name>
+        <name>sys_script_include_0327cdec1b437010708a6288b04bcbdb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_70433_epic_test.OAuthDevOpsGitHubHandler&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;OAuthDevOpsGitHubHandler&lt;/name&gt;&lt;script&gt;&lt;![CDATA[// var OAuthDevOpsGitHubHandler = Class.create();
+// OAuthDevOpsGitHubHandler.prototype = {
+//     initialize: function() {
+//     },
+
+//     type: 'OAuthDevOpsGitHubHandler'
+// };
+
+var OAuthGitHubHandler = Class.create();
+OAuthGitHubHandler.prototype = Object.extendsObject(OAuthUtil,  {
+	// Override postprocessAccessToken method. GitHub returns a urlencoded
+	// body, so we need to break this apart and extract the values. 
+	postprocessAccessToken: function(accessTokenResponse) {
+		var contentType = accessTokenResponse.getContentType();
+		var contentBody = accessTokenResponse.getBody(); 
+		var paramMap = accessTokenResponse.getparameters();
+		var params = contentBody.split('&amp;'); 
+		var parts; 
+		
+		params.forEach(function(param) {
+			parts = param.split('=');
+			paramMap.put(parts[0], parts[1]);
+		});
+		
+		// GitHub tokens do not expire, hardcode expiration to something far away
+		paramMap.put('expires_in', '365246060'); 
+	},
+	
+	type: 'OAuthGitHubHandler'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-10-03 21:09:25&lt;/sys_created_on&gt;&lt;sys_id&gt;0327cdec1b437010708a6288b04bcbdb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;OAuthDevOpsGitHubHandler&lt;/sys_name&gt;&lt;sys_package display_value="EPIC Test" source="x_70433_epic_test"&gt;30944a591bc23010708a6288b04bcbf8&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="EPIC Test"&gt;30944a591bc23010708a6288b04bcbf8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_0327cdec1b437010708a6288b04bcbdb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-03 21:09:25&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1681819683</payload_hash>
+        <record_name>OAuthDevOpsGitHubHandler</record_name>
+        <reverted_from/>
+        <source>7094c6d11b063010708a6288b04bcbbb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-03 21:09:25</sys_created_on>
+        <sys_id>c577c1201b837010708a6288b04bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c47fd75840000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-03 21:09:25</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>cd77c120c38370108dcaa60e48c8592a</update_guid>
+        <update_guid_history>cd77c120c38370108dcaa60e48c8592a:-1681819683</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-03 21:22:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0df13d0116984365814f3c32d5369639</sys_id>
+        <sys_metadata>0327cdec1b437010708a6288b04bcbdb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OAuthDevOpsGitHubHandler</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_scope_delete display_value="">896c2ccd4dcb48f69d03438538114b39</sys_scope_delete>
+        <sys_update_name>sys_script_include_0327cdec1b437010708a6288b04bcbdb</sys_update_name>
+        <sys_update_version display_value="sys_script_include_0327cdec1b437010708a6288b04bcbdb">c577c1201b837010708a6288b04bcb2b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-03 21:22:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

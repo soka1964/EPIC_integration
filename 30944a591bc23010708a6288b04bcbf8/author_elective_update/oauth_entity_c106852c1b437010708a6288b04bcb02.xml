@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url>https://github.com/login/oauth/authorize</auth_url>
+        <certificate_url/>
+        <client_id>Iv1.e22103f9ef8eb4a5</client_id>
+        <client_secret>7pwxaZkLugfH1clLTm58IqBzaMbB5jReNnjbgwkxiJXAQIaiuCRiQXsxpJr4TKMY</client_secret>
+        <client_uuid>4106852c1b437010708a6288b04bcb02</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>authorization_code</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <name>GitHub</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://dev109072.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-03 21:10:58</sys_created_on>
+        <sys_id>c106852c1b437010708a6288b04bcb02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GitHub</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_update_name>oauth_entity_c106852c1b437010708a6288b04bcb02</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-03 21:10:58</sys_updated_on>
+        <token_url>https://github.com/login/oauth/access_token</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</application>
+        <file_path/>
+        <instance_id>bb35a8bb1b4b60587d9d2f8dee4bcb4a</instance_id>
+        <instance_name>dev109072</instance_name>
+        <name>oauth_entity_c106852c1b437010708a6288b04bcb02</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>0</auth_code_lifespan><auth_url>https://github.com/login/oauth/authorize</auth_url><certificate_url/><client_id>Iv1.e22103f9ef8eb4a5</client_id><client_secret>7pwxaZkLugfH1clLTm58IqBzaMbB5jReNnjbgwkxiJXAQIaiuCRiQXsxpJr4TKMY</client_secret><client_uuid>4106852c1b437010708a6288b04bcb02</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>authorization_code</default_grant_type><id_token_lifespan>0</id_token_lifespan><logo_url/><message_signature_lifespan>0</message_signature_lifespan><name>GitHub</name><oauth_api_script/><protocol_name/><public_client>false</public_client><redirect_url>https://dev109072.service-now.com/oauth_redirect.do</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt>0</salt><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-03 21:10:58</sys_created_on><sys_id>c106852c1b437010708a6288b04bcb02</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GitHub</sys_name><sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package><sys_policy/><sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope><sys_update_name>oauth_entity_c106852c1b437010708a6288b04bcb02</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-03 21:10:58</sys_updated_on><token_url>https://github.com/login/oauth/access_token</token_url><type>oauth_provider</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>1524863401</payload_hash>
+        <record_name>GitHub</record_name>
+        <reverted_from/>
+        <source>7094c6d11b063010708a6288b04bcbbb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-03 21:22:43</sys_created_on>
+        <sys_id>f37a49a01b837010708a6288b04bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c4809a2d70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-03 21:22:43</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>7bc7c52007837010a28afdeaf123d1a1</update_guid>
+        <update_guid_history>7bc7c52007837010a28afdeaf123d1a1:-940704167,7bc7c52007837010a28afdeaf123d1a1:-940704167</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="GitHub">87af68f01b4f7010708a6288b04bcb9e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-10-04 14:04:00</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>116c5119062841c483e67ece3967af79</sys_id>
+        <sys_metadata>c106852c1b437010708a6288b04bcb02</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GitHub</sys_name>
+        <sys_package display_value="EPIC Test" source="x_70433_epic_test">30944a591bc23010708a6288b04bcbf8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EPIC Test">30944a591bc23010708a6288b04bcbf8</sys_scope>
+        <sys_scope_delete display_value="">896c2ccd4dcb48f69d03438538114b39</sys_scope_delete>
+        <sys_update_name>oauth_entity_c106852c1b437010708a6288b04bcb02</sys_update_name>
+        <sys_update_version display_value="oauth_entity_c106852c1b437010708a6288b04bcb02">f37a49a01b837010708a6288b04bcb64</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-10-04 14:04:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
