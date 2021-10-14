@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="EPIC REST OPRET_CM_Tickets_v001" max_length="40" name="x_70433_epic_test_epic_rest_opret_cm_tickets_v001" sizeclass="20" type="collection">
+    <element extends="sys_import_set_row" max_length="40" name="x_70433_epic_test_epic_rest_opret_cm_tickets_v001" type="collection">
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Request Action" label="Request Action" max_length="40" name="u_request_action" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Request Payload" label="Request Payload" max_length="484" name="u_request_payload" type="string"/>
     </element>

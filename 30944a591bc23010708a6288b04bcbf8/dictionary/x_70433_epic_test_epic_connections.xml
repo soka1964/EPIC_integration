@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="EPIC Connections" max_length="40" name="x_70433_epic_test_epic_connections" sizeclass="2" type="collection">
-        <element choice="3" default="http_basic_authorization" label="Authorization method" mandatory="true" max_length="40" name="authorization_method" type="choice">
+    <element label="EPIC Connections" max_length="40" name="x_70433_epic_test_epic_connections" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="http_basic_authorization" label="Authorization method" mandatory="true" max_length="40" name="authorization_method" type="choice">
             <choice>
                 <element inactive_on_update="false" label="HTTP Basic Authorization" value="http_basic_authorization"/>
                 <element inactive_on_update="false" label="OAuth 2.0 token" value="oauth_token"/>
@@ -9,13 +9,13 @@
         <element label="Basic  Authorization key" max_length="40" name="basic_authorization_key" type="string"/>
         <element label="Connection description" max_length="500" name="connection_description" type="string"/>
         <element label="Connection name" max_length="100" name="connection_name" type="string"/>
-        <element default="10" label="Connection retry count" max_length="40" name="connection_retry_count" type="integer"/>
-        <element default="20" label="Connection retry count frequency" max_length="40" name="connection_retry_count_frequency" type="integer"/>
-        <element default="10" label="Connection timeout" max_length="40" name="connection_timeout" type="integer"/>
-        <element label="Enable" max_length="40" name="enable" type="boolean"/>
-        <element label="Enable logging" max_length="40" name="enable_logging" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="10" label="Connection retry count" max_length="40" name="connection_retry_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="20" label="Connection retry count frequency" max_length="40" name="connection_retry_count_frequency" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="10" label="Connection timeout" max_length="40" name="connection_timeout" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Enable" max_length="40" name="enable" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Enable logging" max_length="40" name="enable_logging" type="boolean"/>
         <element label="EPIC Client ID" max_length="40" name="epic_client_id" type="string"/>
-        <element choice="1" default="poc" label="EPIC environment" mandatory="true" max_length="40" name="epic_environment" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="poc" label="EPIC environment" mandatory="true" max_length="40" name="epic_environment" type="choice">
             <choice>
                 <element inactive_on_update="false" label="POC" value="poc"/>
                 <element inactive_on_update="false" label="PRE" value="pre"/>
@@ -24,7 +24,7 @@
                 <element inactive_on_update="false" label="TSTX" value="tstx"/>
             </choice>
         </element>
-        <element choice="3" default="20" label="EPIC import frequency" max_length="40" name="epic_import_frequency" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="20" label="EPIC import frequency" max_length="40" name="epic_import_frequency" type="choice">
             <choice>
                 <element inactive_on_update="false" label="10. minute" value="600"/>
                 <element inactive_on_update="false" label="10 seconds" sequence="100" value="10"/>
@@ -34,8 +34,8 @@
                 <element inactive_on_update="false" label="5. minute" sequence="300" value="300"/>
             </choice>
         </element>
-        <element label="EPIC Import Set" max_length="32" name="epic_import_set" reference="sys_data_source" reference_qual="nameSTARTSWITHEPIC^sys_scopeSTARTSWITHEPIC^EQ" reference_qual_condition="nameSTARTSWITHEPIC^sys_scopeSTARTSWITHEPIC^EQ" type="reference"/>
-        <element choice="1" default="2020" label="EPIC REST API version" max_length="40" name="epic_rest_api_version" type="choice">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="EPIC Import Set" max_length="32" name="epic_import_set" reference="sys_data_source" reference_qual="nameSTARTSWITHEPIC^sys_scopeSTARTSWITHEPIC^EQ" reference_qual_condition="nameSTARTSWITHEPIC^sys_scopeSTARTSWITHEPIC^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="2020" label="EPIC REST API version" max_length="40" name="epic_rest_api_version" type="choice">
             <choice>
                 <element inactive_on_update="false" label="2019" value="2019"/>
                 <element inactive_on_update="false" label="2020" value="2020"/>
@@ -45,8 +45,8 @@
         <element label="EPIC REST URL 2" max_length="500" name="epic_rest_url_2" type="string"/>
         <element label="EPIC REST URL 3" max_length="500" name="epic_rest_url_3" type="string"/>
         <element label="EPIC REST URL 4" max_length="500" name="epic_rest_url_4" type="string"/>
-        <element label="EPIC UPDATE (BR)" max_length="32" name="epic_update_br" reference="sys_script" reference_qual="nameSTARTSWITHEPIC^EQ" reference_qual_condition="nameSTARTSWITHEPIC^EQ" type="reference"/>
-        <element choice="3" default="import_save_update" label="FLOW profile" max_length="40" name="flow_profile" type="choice">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="EPIC UPDATE (BR)" max_length="32" name="epic_update_br" reference="sys_script" reference_qual="nameSTARTSWITHEPIC^EQ" reference_qual_condition="nameSTARTSWITHEPIC^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="import_save_update" label="FLOW profile" max_length="40" name="flow_profile" type="choice">
             <choice>
                 <element inactive_on_update="false" label="IMPORT from EPIC - CREATE in ServiceNow - UPDATE EPIC" sequence="100" value="import_save_update"/>
                 <element inactive_on_update="false" label="CREATE in ServiceNow - CREATE in EPIC - UPDATE ServiceNow" sequence="200" value="create_servicenow_create_epic"/>
@@ -56,10 +56,10 @@
         <element label="JSON Selection 2" max_length="500" name="json_selection_2" type="string"/>
         <element label="JSON Selection 3" max_length="500" name="json_selection_3" type="string"/>
         <element label="JSON Selection 4" max_length="500" name="json_selection_4" type="string"/>
-        <element label="MID server" max_length="32" name="mid_server" reference="ecc_agent" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="MID server" max_length="32" name="mid_server" reference="ecc_agent" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="ServiceNow CREATE (BR)" max_length="32" name="servicenow_create_br" reference="sys_script" reference_qual="nameSTARTSWITHEPIC^EQ" reference_qual_condition="nameSTARTSWITHEPIC^EQ" type="reference"/>
-        <element choice="3" default="dev" label="ServiceNow environment" mandatory="true" max_length="40" name="servicenow_environment" type="choice">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="ServiceNow CREATE (BR)" max_length="32" name="servicenow_create_br" reference="sys_script" reference_qual="nameSTARTSWITHEPIC^EQ" reference_qual_condition="nameSTARTSWITHEPIC^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="dev" label="ServiceNow environment" mandatory="true" max_length="40" name="servicenow_environment" type="choice">
             <choice>
                 <element inactive_on_update="false" label="SAND" sequence="100" value="sand"/>
                 <element inactive_on_update="false" label="DEV" sequence="200" value="dev"/>
@@ -68,7 +68,7 @@
                 <element inactive_on_update="false" label="PROD" sequence="500" value="prod"/>
             </choice>
         </element>
-        <element label="Use MID server" max_length="40" name="use_mid_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Use MID server" max_length="40" name="use_mid_server" type="boolean"/>
         <index name="index">
             <element name="mid_server"/>
         </index>

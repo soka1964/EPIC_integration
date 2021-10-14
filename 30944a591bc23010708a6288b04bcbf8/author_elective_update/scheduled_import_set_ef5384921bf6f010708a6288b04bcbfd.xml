@@ -90,7 +90,7 @@
         <update_guid_history>f1235092f93af0108526fa6c4a1e8671:-935349831,4ae2d852fc3af010212dd21d33a25418:314007232,980d88da68f6f010708bf81508cad826:1621590537,980d88da68f6f010708bf81508cad826:1621590537,e84c489a1ff6f0104c093bf94c758eb9:-627399248,36e9cc1acaf6f010791e6791e483e43d:1992250583,8ea38c52d1f6f01024a727d8f09e6ade:-755753895</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="EPIC REST Import OPRET_CM_Tickets_v001">e443d0921b3af010708a6288b04bcb1d</sys_audit_delete>
+        <sys_audit_delete display_value="">e443d0921b3af010708a6288b04bcb1d</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-26 17:35:03</sys_created_on>

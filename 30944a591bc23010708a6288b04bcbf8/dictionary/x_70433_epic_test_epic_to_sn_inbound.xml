@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="EPIC to SN Inbound " max_length="40" name="x_70433_epic_test_epic_to_sn_inbound" sizeclass="20" type="collection">
+    <element extends="sys_import_set_row" label="EPIC to SN Inbound " max_length="40" name="x_70433_epic_test_epic_to_sn_inbound" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Request Action" max_length="40" name="request_action" type="string"/>
         <element label="Request Payload" max_length="1000" name="request_payload" type="string"/>
